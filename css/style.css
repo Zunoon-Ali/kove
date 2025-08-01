@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: m;
+  src: url("../font/MargarethRosinante-Regular.otf");
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: m, sans-serif;
+}
+
+.scroll-container {
+  height: auto;
+  overflow: hidden;
+}
+
+.main-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  flex-shrink: 0;
+}
+
+.section1 {
+  /* background-color: bisque; */
+  font-size: 100px;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.box1 {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box2 {
+  width: 35%;
+  height: 100%;
+}
+
+.name h1 {
+  font-size: 150px;
+  text-align: center;
+}
+
+.image-gallery {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  height: auto;
+  min-height: 250px;
+  width: 150px;
+  object-fit: cover;
+  background-color: black;
+}
+
+.col-1 img,
+.col-3 img {
+  padding: 0.2rem 0.3rem;
+}
+
+.col-2 img {
+  padding: 0.2rem 0;
+}
+
+/* .section2 {
+  /* background-color: aqua; */
+/* font-size: 100px; */
+/* transform: translate(1%); */
+/* } */
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.left {
+  width: 65%;
+  padding: 0 0.8rem;
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+}
+.right {
+  width: 35%;
+}
+.left img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+.line-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+p {
+  font-size: 70px;
+}
+
+.img-container img {
+  width: 100%;
+  height: calc(100% - 0.4rem);
+  object-fit: cover;
+}
+.img-container {
+  width: 100%;
+  height: 700px;
+  padding: 0.5rem;
+  background-color: black;
+}
+
+.line-2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.loop {
+  height: 30px;
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 1px solid rgb(70, 70, 70);
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  cursor: pointer;
+}
+
+.loop2 span {
+  animation-delay: 5s;
+}
+
+.loop span {
+  animation: loop 10s linear infinite;
+  display: inline-block;
+  padding-left: 110%;
+}
+
+@keyframes loop {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.num {
+  width: 100%;
+  text-align: left;
+}
+.animate-text {
+  height: 120px;
+  background-color: black;
+  color: white;
+  font-size: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.animate-text span {
+  animation: loop 10s linear infinite;
+  display: inline-block;
+}
+
+.section3 {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.row {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+
+.row ul {
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  /* margin-left: 10px; */
+  /* max-width: 1200px; */
+  /* width: 100%; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.row li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 200px;
+  font-weight: bold;
+  color: inherit;
+  margin: 0 90px;
+}
+.row-2 {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+}
